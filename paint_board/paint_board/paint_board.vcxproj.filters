@@ -18,10 +18,7 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MFC_20240909.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MFC_20240909Dlg.h">
+    <ClInclude Include="paint_board.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -30,51 +27,54 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="paint_boardDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="paint_boardView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SubDlg1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SubDlg2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SubDlg3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MFC_20240909.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MFC_20240909Dlg.cpp">
+    <ClCompile Include="paint_board.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SubDlg1.cpp">
+    <ClCompile Include="MainFrm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SubDlg2.cpp">
+    <ClCompile Include="paint_boardDoc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SubDlg3.cpp">
+    <ClCompile Include="paint_boardView.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MFC_20240909.rc">
+    <ResourceCompile Include="paint_board.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MFC_20240909.rc2">
+    <None Include="res\paint_board.rc2">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MFC_20240909.ico">
+    <Image Include="res\paint_boardDoc.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\paint_board.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

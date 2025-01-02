@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E22A417A-3C53-4212-8ACC-23C478AAD9DA}</ProjectGuid>
-    <RootNamespace>MFC_20240909</RootNamespace>
+    <ProjectGuid>{F7ED95D0-EED8-4BB1-B73F-50D2E6684E49}</ProjectGuid>
+    <RootNamespace>MFC_20240911</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <Keyword>MFCProj</Keyword>
   </PropertyGroup>
@@ -185,43 +185,38 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MFC_20240909.h" />
-    <ClInclude Include="MFC_20240909Dlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MFC_20240911.h" />
+    <ClInclude Include="MFC_20240911Doc.h" />
+    <ClInclude Include="MFC_20240911View.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="SubDlg1.h" />
-    <ClInclude Include="SubDlg2.h" />
-    <ClInclude Include="SubDlg3.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MFC_20240909.cpp" />
-    <ClCompile Include="MFC_20240909Dlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MFC_20240911.cpp" />
+    <ClCompile Include="MFC_20240911Doc.cpp" />
+    <ClCompile Include="MFC_20240911View.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SubDlg1.cpp" />
-    <ClCompile Include="SubDlg2.cpp" />
-    <ClCompile Include="SubDlg3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MFC_20240909.rc" />
+    <ResourceCompile Include="MFC_20240911.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MFC_20240909.rc2" />
+    <None Include="res\MFC_20240911.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MFC_20240909.ico" />
+    <Image Include="res\MFC_20240911.ico" />
+    <Image Include="res\MFC_20240911Doc.ico" />
+    <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties RESOURCE_FILE="MFC_20240909.rc" />
-    </VisualStudio>
-  </ProjectExtensions>
 </Project>

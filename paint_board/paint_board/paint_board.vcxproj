@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{E22A417A-3C53-4212-8ACC-23C478AAD9DA}</ProjectGuid>
-    <RootNamespace>MFC_20240909</RootNamespace>
+    <ProjectGuid>{8546376F-A28B-418B-A292-28C8757CEFAB}</ProjectGuid>
+    <RootNamespace>paint_board</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
     <Keyword>MFCProj</Keyword>
   </PropertyGroup>
@@ -102,7 +102,7 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </Midl>
     <ResourceCompile>
-      <Culture>0x0412</Culture>
+      <Culture>0x0409</Culture>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
@@ -124,7 +124,7 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </Midl>
     <ResourceCompile>
-      <Culture>0x0412</Culture>
+      <Culture>0x0409</Culture>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
@@ -150,7 +150,7 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </Midl>
     <ResourceCompile>
-      <Culture>0x0412</Culture>
+      <Culture>0x0409</Culture>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
@@ -176,7 +176,7 @@
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </Midl>
     <ResourceCompile>
-      <Culture>0x0412</Culture>
+      <Culture>0x0409</Culture>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
@@ -185,43 +185,43 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MFC_20240909.h" />
-    <ClInclude Include="MFC_20240909Dlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="paint_board.h" />
+    <ClInclude Include="paint_boardDoc.h" />
+    <ClInclude Include="paint_boardView.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="SubDlg1.h" />
-    <ClInclude Include="SubDlg2.h" />
-    <ClInclude Include="SubDlg3.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MFC_20240909.cpp" />
-    <ClCompile Include="MFC_20240909Dlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="paint_board.cpp" />
+    <ClCompile Include="paint_boardDoc.cpp" />
+    <ClCompile Include="paint_boardView.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="SubDlg1.cpp" />
-    <ClCompile Include="SubDlg2.cpp" />
-    <ClCompile Include="SubDlg3.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="MFC_20240909.rc" />
+    <ResourceCompile Include="paint_board.rc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\MFC_20240909.rc2" />
+    <None Include="res\paint_board.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\MFC_20240909.ico" />
+    <Image Include="res\paint_board.ico" />
+    <Image Include="res\paint_boardDoc.ico" />
+    <Image Include="res\Toolbar.bmp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties RESOURCE_FILE="MFC_20240909.rc" />
+      <UserProperties RESOURCE_FILE="paint_board.rc" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

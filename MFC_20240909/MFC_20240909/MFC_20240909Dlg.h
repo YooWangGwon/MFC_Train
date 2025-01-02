@@ -3,6 +3,9 @@
 //
 
 #pragma once
+#include "SubDlg1.h"
+#include "SubDlg2.h"
+#include "SubDlg3.h" 
 
 
 // CMFC_20240909Dlg 대화 상자
@@ -36,5 +39,8 @@ public:
 	afx_msg void OnBnClickedButton2();
 	afx_msg void OnBnClickedButton3();
 
+	CSubDlg1* m_dlg1;
+	CSubDlg2* m_dlg2;
+	CSubDlg3* m_dlg3;
 
 };

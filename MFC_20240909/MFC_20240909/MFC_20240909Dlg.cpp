@@ -103,6 +103,22 @@ BOOL CMFC_20240909Dlg::OnInitDialog()
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 
+	// 자식 다이얼로그들 생성 및 숨기기
+	m_dlg1 = new CSubDlg1();
+	m_dlg1->Create(IDD_DIALOG1, this);
+	m_dlg1->SetWindowPos(NULL, 10, 50, 300, 200, SWP_NOZORDER);
+	m_dlg1->ShowWindow(SW_HIDE);
+
+	m_dlg2 = new CSubDlg2();
+	m_dlg2->Create(IDD_DIALOG2, this);
+	m_dlg2->SetWindowPos(NULL, 10, 50, 300, 200, SWP_NOZORDER);
+	m_dlg2->ShowWindow(SW_HIDE);
+
+	m_dlg3 = new CSubDlg3();
+	m_dlg3->Create(IDD_DIALOG3, this);
+	m_dlg3->SetWindowPos(NULL, 10, 50, 300, 200, SWP_NOZORDER);
+	m_dlg3->ShowWindow(SW_HIDE);
+
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
@@ -159,17 +175,50 @@ HCURSOR CMFC_20240909Dlg::OnQueryDragIcon()
 
 void CMFC_20240909Dlg::OnBnClickedButton1()
 {
-	i
+	// 모달리스 창 생성용1
+	//if (!m_dlg1)
+	//{
+	//	m_dlg1 = new CSubDlg1();
+	//	m_dlg1->Create(IDD_DIALOG1, this);
+	//}
+	//m_dlg1->ShowWindow(SW_SHOW);
+
+	// 다이얼로그 변경용
+	m_dlg1->ShowWindow(SW_SHOW);
+	m_dlg3->ShowWindow(SW_HIDE);
+	m_dlg2->ShowWindow(SW_HIDE);
 }
 
 
 void CMFC_20240909Dlg::OnBnClickedButton2()
 {
-	// TODO: Add your control notification handler code here
+	// 모달리스 창 생성용2
+	//if (!m_dlg1)
+	//{
+	//	m_dlg1 = new CSubDlg1();
+	//	m_dlg1->Create(IDD_DIALOG1, this);
+	//}
+	//m_dlg1->ShowWindow(SW_SHOW);
+
+	// 다이얼로그 변경용
+	m_dlg1->ShowWindow(SW_HIDE);
+	m_dlg3->ShowWindow(SW_SHOW);
+	m_dlg2->ShowWindow(SW_HIDE);
 }
 
 
 void CMFC_20240909Dlg::OnBnClickedButton3()
 {
-	// TODO: Add your control notification handler code here
+	// 모달리스 창 생성용3
+	//if (!m_dlg3)
+	//{
+	//	m_dlg3 = new CSubDlg3();
+	//	m_dlg3->Create(IDD_DIALOG1, this);
+	//}
+	//m_dlg3->ShowWindow(SW_SHOW);
+
+	// 다이얼로그 변경용
+	m_dlg1->ShowWindow(SW_HIDE);
+	m_dlg3->ShowWindow(SW_HIDE);
+	m_dlg2->ShowWindow(SW_HID);
 }

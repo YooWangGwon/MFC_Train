@@ -28,7 +28,15 @@ void CDlgTab1::DoDataExchange(CDataExchange* pDX)
 
 
 BEGIN_MESSAGE_MAP(CDlgTab1, CDialogEx)
+	ON_BN_CLICKED(IDOK, &CDlgTab1::OnBnClickedOk)
 END_MESSAGE_MAP()
 
 
 // CDlgTab1 message handlers
+
+
+void CDlgTab1::OnBnClickedOk()
+{
+	// TODO: Add your control notification handler code here
+	CDialogEx::OnOK();
+}
